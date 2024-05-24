@@ -48,3 +48,10 @@ For Multi-Line Comments you use
 Multi-Line Comment
 */
 ```
+
+
+## Contributors
+
+- [MitjaCH](https://github.com/MitjaCH)
+- [Bomba-Cat](https://github.com/bomba-cat)
+- [Nxkzty](https://github.com/nxkzty)
