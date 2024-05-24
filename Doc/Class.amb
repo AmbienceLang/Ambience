@@ -1,0 +1,29 @@
+// Simple Class in Ambience
+
+init Rectangle {
+    int width;
+    int height;
+};
+
+// Function to get the area of the rectangle
+func int getArea(Rectangle* rect) {
+    return rect->width * rect->height;
+}
+
+// Function to get the perimeter of the rectangle
+func int getPerimeter(Rectangle* rect) {
+    return 2 * (rect->width + rect->height);
+}
+
+class int main() {
+    // Create a Rectangle object
+    Rectangle myRect;
+    myRect.width = 5;
+    myRect.height = 10;
+
+    // Use the functions
+    out!("Area: {$}", getArea(myRect));
+    out!("Perimeter: {$}\n", getPerimeter(myRect));
+
+    return 0;
+}

@@ -1,0 +1,18 @@
+//Simple Else Clause with Ambience
+
+init cond1 = true;
+init bool cond2 = false;
+
+init type name = value; //user sets type
+init name = value; //lexer sets type
+
+//----inside the assembly
+// section .data
+//      cond1: 1
+//      cond2: 0
+
+if (cond1){
+    cond2 = true;
+} elif (cond2) {
+    out("working"); // Semicolon :nerd:
+}

@@ -1,0 +1,10 @@
+// Simpel Input & Output in Ambience
+
+// Use out!("content"); to print
+
+out!("Hello World!");
+
+out!() //no newline
+out() //newline
+
+// Use in!("Enter your username: {$s}", name); to get input

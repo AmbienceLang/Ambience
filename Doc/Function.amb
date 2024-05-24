@@ -1,0 +1,17 @@
+// Simple Function in Ambience
+
+func int add(int a, int b){
+    int c = a + b;
+    return c;
+}
+
+// Use the function
+
+init num1 = 5;
+init num2 = 10;
+init result;
+
+// Function call
+result = add(num1, num2);
+
+out!("The Result is: {$}", result);

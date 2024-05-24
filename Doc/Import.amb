@@ -1,0 +1,5 @@
+// Ways to Import packages in Ambience
+
+imp [packageName] as [variableName]
+imp [specific function in package] from [packageName]
+imp [specific function in package] from [packageName] as [variableName]

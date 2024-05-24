@@ -1,0 +1,13 @@
+// Simple Data Types in Ambience
+
+// You can use init for every variable 
+init cond1 = true;
+init cond2 = 4;
+init cond3 = [1,2,3,4]
+init cond4 = "Hallo"
+
+// You can also use the normal Data Types
+int number1 = 1;
+float number2 = 3.14;
+char ch = "A";
+arr list = [1,2,3,4,5];

@@ -1,0 +1,6 @@
+//Simple For Loop with Ambience
+
+range = 50;     // same as short range = 50;
+for (num = 0; num > range; num++){
+    out("{$}", itoa(num))
+}

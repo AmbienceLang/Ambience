@@ -1,0 +1,4 @@
+// Simple Array in Ambience
+
+init array = [1,2,3];
+arr intArray = [1,2,3,4];

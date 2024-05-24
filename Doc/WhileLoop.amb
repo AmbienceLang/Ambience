@@ -1,0 +1,28 @@
+//Simple While Loop with Ambience
+
+
+init cond1 = true;
+init loopcount = 0;
+
+while (cond1 == true) {
+    loopcount += 1;
+}
+
+
+
+//Progressed While Loop with Ambience
+
+
+init cond1 = true;
+init loopcount = 0;
+
+while (cond1 == true) {
+    loopcount += 1;
+    while (loopcount > 5){
+        out!("Already looped more then {$} times", loopcount); // newline
+        out("Already looped more then {$} times", loopcount); // not newline
+    }
+    if (loopcount !< 20) { // if loopcount is not smaller then 20
+        cond1 = false;
+    }
+}

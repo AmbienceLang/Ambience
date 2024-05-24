@@ -1,0 +1,9 @@
+//Simple If Clause with Ambience
+
+
+init cond1 = 2
+init cond2 = 4
+
+if (cond1 < cond2) {
+    out("{$} is more then {$}", cond2, cond1)
+}
