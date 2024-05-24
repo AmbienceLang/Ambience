@@ -1,5 +1,5 @@
 # Ambiance
-Ambiance is a general-purpose programming language. Designed to simplify programming for newer developers as well as making it easy. to use for more experienced Devs
+Ambiance is a general-purpose programming language. Designed to simplify programming for newer developers as well as making it easy to use for more experienced Devs
 
 
 # Ambiance Syntax
