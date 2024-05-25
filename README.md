@@ -54,4 +54,4 @@ Multi-Line Comment
 
 - [MitjaCH](https://github.com/MitjaCH)
 - [Bomba-Cat](https://github.com/bomba-cat)
-- [Nxkzty](https://github.com/nxkzty)
+- [Logoko709](https://github.com/Logoko709)
