@@ -38,17 +38,23 @@ void setup() {
     snprintf(dir_name, sizeof(dir_name), "%s", project_name);
     char meta_file[150];
     char sample_file[150];
-    snprintf(meta_file, sizeof(meta_file), "%s/ambp.json", dir_name);
+    snprintf(meta_file, sizeof(meta_file), "%s/project.json", dir_name);
     snprintf(sample_file, sizeof(sample_file), "%s/main.amb", dir_name);
 
     create_directory(dir_name);
 
-    char meta_content[512];
+    char meta_content[1024];
     snprintf(meta_content, sizeof(meta_content),
              "{\n"
-             "    \"project-name\": \"%s\",\n"
-             "    \"project-description\": \"%s\",\n"
-             "    \"Dependencies\": \"%s\"\n"
+             "    \"name\": \"%s\",\n"
+             "    \"version\": \"1.0.0\",\n"
+             "    \"description\": \"%s\",\n"
+             "    \"dependencies\": {\n"
+             
+                  
+             "    },\n"
+             "    \"author\": \"Your Name\",\n"
+             "    \"license\": \"MIT\"\n"
              "}\n", project_name, description);
     create_file(meta_file, meta_content);
 
