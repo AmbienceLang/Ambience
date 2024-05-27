@@ -12,7 +12,7 @@ Ambiance is a general-purpose programming language. Designed to simplify program
 - `str`: Represents a sequence of characters enclosed in double quotes.
 
 ## Variable Declaration
-Variables can be declared using explicit data types or using the `var` keyword.
+Variables can be declared using explicit data types or using the `init` keyword.
 
 ### Explicit Declaration
 ```
