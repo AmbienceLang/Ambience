@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "./compiler/lexer/lexer.c"
 #include "./ambs/ambs.c"
 
 void printLogo() {
