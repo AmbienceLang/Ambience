@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "./compiler/lexer/lexer.h"
+#include "./lexer/lexer.h"
 
 void printLogo() {
     printf("\033[1;36m");
@@ -28,17 +28,6 @@ void compiler(const char* source) {
     analyzeFile(file);
     fclose(file);
 }
-
-void packageManager(const char* action) {
-    printf("Managing packages with action: %s\n", action);
-    // TODO: Package Manager Logic
-}
-
-void projectSetup() {
-    printf("Starting Setup builder.\n");
-    // TODO: Setup Logic
-}
-
 int main(int argc, char *argv[]) 
 {   
     printLogo();
@@ -47,9 +36,6 @@ int main(int argc, char *argv[])
         fprintf(stderr, "Usage: %s <command> [<args>]\n", argv[0]);
         fprintf(stderr, "Commands:\n");
         fprintf(stderr, "  ambc <source>       Compile a C project\n");
-        fprintf(stderr, "  apm <action>        Manage packages (install, uninstall, update)\n");
-        fprintf(stderr, "  ambs <name>         Setup a new project\n");
-        return 1;
     }
 
     const char* command = argv[1];
@@ -60,21 +46,10 @@ int main(int argc, char *argv[])
             return 1;
         }
         compiler(argv[2]);
-    } else if (strcmp(command, "apm") == 0) {
-        if (argc < 3) {
-            fprintf(stderr, "Usage: %s apm <action>\n", argv[0]);
-            return 1;
-        }
-        packageManager(argv[2]);
-    } else if (strcmp(command, "ambs") == 0) {
-        projectSetup();
     } else {
         fprintf(stderr, "Unknown command: %s\n", command);
         fprintf(stderr, "Commands:\n");
         fprintf(stderr, "  ambc <source>       Compile a C project\n");
-        fprintf(stderr, "  apm <action>        Manage packages (install, uninstall, update)\n");
-        fprintf(stderr, "  ambs                Setup a new project\n");
-        return 1;
     }
 
     return 0;

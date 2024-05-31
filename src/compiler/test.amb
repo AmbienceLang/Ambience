@@ -1,0 +1,27 @@
+func main {
+    int a = 10;
+    int b = 20;
+    if (a < b) {
+        a = a + b;
+    }
+    return a;
+}
+
+class MyClass {
+    int x;
+    int y;
+
+    func init {
+        x = 0;
+        y = 0;
+    }
+
+    func setValues(int newX, int newY) {
+        x = newX;
+        y = newY;
+    }
+}
+
+while (a != 0) {
+    a = a - 1;
+}
