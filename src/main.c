@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "./compiler/lexer/lexer.c"
-#include "./ambs/ambs.c"
+#include "./compiler/lexer/lexer.h"
 
 void printLogo() {
     printf("\033[1;36m");
@@ -21,17 +20,23 @@ void printLogo() {
 
 void compiler(const char* source) {
     printf("Compiling project: %s\n", source);
-    // TODO: Compilation Logic
+    FILE *file = fopen(source, "r");
+    if (file == NULL) {
+        printf("Could not open file %s\n", source);
+        return;
+    }
+    analyzeFile(file);
+    fclose(file);
 }
 
 void packageManager(const char* action) {
-    printf("Managin packages with action: %s\n", action);
+    printf("Managing packages with action: %s\n", action);
     // TODO: Package Manager Logic
 }
 
 void projectSetup() {
     printf("Starting Setup builder.\n");
-    setup();
+    // TODO: Setup Logic
 }
 
 int main(int argc, char *argv[]) 
@@ -49,7 +54,7 @@ int main(int argc, char *argv[])
 
     const char* command = argv[1];
 
-        if (strcmp(command, "ambc") == 0) {
+    if (strcmp(command, "ambc") == 0) {
         if (argc < 3) {
             fprintf(stderr, "Usage: %s ambc <source>\n", argv[0]);
             return 1;

@@ -1,7 +1,5 @@
-// Import the necessary package for input/output
 imp std.io as io;
 
-// Function to calculate the factorial of a number
 func int factorial(int n) {
     if (n <= 1) {
         return 1;
@@ -10,28 +8,20 @@ func int factorial(int n) {
     }
 }
 
-// Main function
 class int main() {
-    // Declare variables
     init num;
     init result;
     init choice = "Y";
 
-    // Welcome message
     out!("Welcome to the Factorial Calculator!\n");
 
-    // Main loop
     while (choice == "Y" || choice == "y") {
-        // Get user input
         in!("Enter a number to calculate its factorial: {$i}", num);
 
-        // Calculate factorial using the factorial function
         result = factorial(num);
 
-        // Output the result
         out!("The factorial of {$} is: {$}\n", num, result);
 
-        // Ask if the user wants to calculate another factorial
         in!("Do you want to calculate another factorial? (Y/N): {$s}", choice);
     }
 
